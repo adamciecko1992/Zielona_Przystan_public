@@ -1,0 +1,36 @@
+@import "../../../styles/utilities";
+@import "../../../styles/variables";
+
+.Contact {
+
+    background-image: $gradient-primary;
+    min-height: 160vh;
+
+    &__Header {
+        color: white;
+        text-align: center;
+        font-family: $heading;
+        font-size: 86px;
+        padding-top: 2rem;
+
+    }
+
+    &__SubHeader {
+        color: white;
+        text-align: left;
+        font-family: $subheading;
+        font-size: 20px;
+        margin: 3rem $pageMargin;
+    }
+
+    &__Grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 $pageMargin;
+
+        &__Article {
+            color: white;
+            font-family: 'piazzolla';
+        }
+    }
+}

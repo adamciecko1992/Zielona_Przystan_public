@@ -1,0 +1,27 @@
+$theme-colors: ("primary":$primary,
+    "secondary": $tertiary,
+);
+
+
+
+
+@import "~bootstrap/scss/bootstrap";
+
+.modal-content {
+    width: 70vw;
+    margin: 0 50%;
+    transform: translateX(-50%);
+
+}
+
+
+
+
+.container .jumbotron {
+    border-radius: 0 !important;
+}
+
+
+.btn {
+    border-radius: 0px;
+}

@@ -1,0 +1,7 @@
+@import "../../../../styles/utilities";
+
+.Entry__Grid_Divider{
+
+    @include flexCenter;
+    font-size: 4rem;
+}

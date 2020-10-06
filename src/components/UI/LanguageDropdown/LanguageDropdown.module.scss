@@ -1,0 +1,16 @@
+.Dropdown {
+    width: 3rem;
+
+    &__Toggle {
+        width: 100% !important;
+        padding: 1px;
+        background-color: transparent;
+        border: none;
+        &:hover{
+            background-color: transparent;
+        }
+        &:focus{
+            background-color: transparent;
+        }
+    }
+}

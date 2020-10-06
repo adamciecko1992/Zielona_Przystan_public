@@ -1,0 +1,57 @@
+@import "./styles/variables";
+@import "./styles/utilities";
+@import "./styles/bootstrap";
+
+@font-face {
+  font-family: "spinwerad";
+  src: local("spinwerad"), url("./assets/fonts/spinwerad.ttf");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif !important;
+  font-size: 1.4rem;
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+.centralizer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+@media(min-width:$laptop) {
+  :root {
+    font-size: 100%;
+  }
+}
+
+@media(max-width:$tablet) {
+  :root {
+    font-size: 85%;
+  }
+}
+
+@media(max-width:$phone) {
+  :root {
+    font-size: 70%;
+  }
+}

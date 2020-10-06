@@ -1,0 +1,98 @@
+@import "../../../styles/variables";
+
+.Home {
+
+  width: 100vw;
+  position: relative;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+
+
+  &__Headings {
+    height: 70vh;
+    width: 100%;
+    position: relative;
+
+    &__Video {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: 98vw;
+      // height: 30rem;
+      z-index: -5;
+      transform: translate(-50%, -50%);
+
+    }
+
+
+    &__Heading {
+      font-family: $heading;
+      font-size: clamp(2rem, 5vw, 7rem);
+      font-weight: bolder;
+      text-align: left;
+      width: 70%;
+      color: $text;
+      margin-left: $pageMargin;
+      padding-top: 5rem;
+      background-image: url(../../../assets/video/green_ink_01.mp4);
+    }
+
+    &__Subtitle {
+      font-family: "Piazzolla", serif;
+      width: 70%;
+      text-align: left;
+      color: $text;
+      font-style: italic;
+      font-size: 2rem;
+      margin-left: $pageMargin;
+      margin-top: 2rem;
+    }
+
+    &__Button {
+      margin-left: $pageMargin;
+      margin-top: 2rem;
+    }
+
+
+
+  }
+
+
+
+  &__NavCards {
+    padding: 0 5rem;
+    background-image: $gradient-primary,
+      url('../../../assets/interior/stół.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+  }
+
+
+
+
+
+
+}
+
+
+
+
+// @media(max-width:1040px) {
+//   .Home {
+//     background-size: clamp(1046px, 100vw, 50rem);
+
+//   }
+// }
+
+// @media(max-width:$tablet) {
+//   .Home {
+
+//     &__NavCards {
+//       padding: 0;
+//     }
+//   }
+// }

@@ -1,0 +1,39 @@
+@import "../../styles/variables";
+
+.Header {
+  font-style: italic;
+  font-family: "Niconne", cursive;
+  font-weight: 200;
+  z-index: 1000;
+  background-color: transparent !important;
+  padding-right: $pageMargin;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 5rem;
+
+  &__Button {
+    width: 10rem;
+    margin-left: $pageMargin;
+    border-radius: 2px;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    background-image: linear-gradient(90deg, rgba(247, 138, 2, 1) 0%, rgba(255, 177, 12, 1) 30%, rgba(255, 229, 0, 1) 100%);
+
+  }
+
+  a {
+
+    height: 100%;
+    text-decoration: none;
+
+    &hover {
+      text-decoration: none;
+    }
+  }
+
+
+}

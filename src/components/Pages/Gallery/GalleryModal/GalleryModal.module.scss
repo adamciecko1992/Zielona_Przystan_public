@@ -1,0 +1,27 @@
+.GalleryModal {
+    width: 90vw !important;
+    height: 50vh;
+    background-color: transparent;
+
+
+
+    img {
+        max-height: 33vw;
+        min-height: 30vw;
+
+    }
+}
+
+@media(max-width:400px) {
+    .GalleryModal {
+        width: 90vw !important;
+        height: 50vh;
+        background-color: transparent;
+
+
+        img {
+            max-height: 65vw;
+            min-height: 30vw;
+        }
+    }
+}

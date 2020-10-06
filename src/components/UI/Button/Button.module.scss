@@ -1,0 +1,53 @@
+@import "../../../styles/variables";
+
+.Button {
+    outline: none;
+    border: none;
+    min-width: 8rem;
+    font-size: 0.9rem;
+    border-radius: 2px;
+    padding: 10px;
+    transition: all 0.5s;
+    font-weight: bold;
+    font-family: $heading;
+    background-color: transparent;
+    border: 1px solid white;
+
+    a {
+        color: rgb(255, 255, 255);
+        transition: all 0.5s;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &:hover {
+        background-color: rgb(238, 238, 238);
+        border: 1px solid rgb(240, 240, 240);
+
+
+        a {
+            color: rgb(0, 0, 0);
+        }
+
+    }
+
+    &__Dark {
+        border: 1px solid black !important;
+        color: black;
+
+        &:hover {
+            background-color: black;
+            border: black;
+            color: white;
+
+            a {
+                color: rgb(250, 246, 246);
+            }
+
+
+
+        }
+    }
+}
