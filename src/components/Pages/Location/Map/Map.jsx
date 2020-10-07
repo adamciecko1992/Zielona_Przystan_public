@@ -57,5 +57,7 @@ export class MapContainer extends Component {
   }
 }
 export default GoogleApiWrapper({
-  apiKey: "api key", //not availabel in git repo
+  apiKey: "no key in github repo",
 })(MapContainer);
+
+

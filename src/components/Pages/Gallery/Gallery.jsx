@@ -20,8 +20,8 @@ function Gallery(props) {
     <>
       <GalleryModal show={show} handleClose={handleClose} fullImg={fullImg} />
       <div className={classes.Gallery}>
-        <h1 className={classes.Gallery__Header}>Galeria</h1>
-        <h3 className={classes.Gallery__Subheader}>Odrkyj nasze wnętrze</h3>
+        <h1 className={classes.Gallery__Header}>{props.content.header}</h1>
+        <h3 className={classes.Gallery__Subheader}>{props.content.subheader}</h3>
         <div className={classes.Gallery__ImageList}>
           <ImageList images={imagesArr} showModal={handleShow} />
         </div>

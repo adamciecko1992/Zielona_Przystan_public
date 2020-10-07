@@ -8,7 +8,7 @@ import classes from "../Header.module.scss";
 export default function HeaderButton() {
   return (
     <Link to="/">
-      <Button variant="secondary" className={classes.Header__Button}>
+      <Button variant="outline-light" className={classes.Header__Button}>
         <FontAwesomeIcon icon={faArrowAltCircleLeft} />
         <p className="mb-0"> Powrót</p>
       </Button>

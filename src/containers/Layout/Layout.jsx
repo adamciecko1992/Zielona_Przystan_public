@@ -28,10 +28,10 @@ export default function Layout({ setCurrentLanguage, content }) {
           <Location content={content.location} />
         </Route>
         <Route exact path="/gallery">
-          <Gallery content={content} />
+          <Gallery content={content.gallery} />
         </Route>
         <Route exact path="/contact">
-          <Kontakt content={content} />
+          <Kontakt content={content.contact} />
         </Route>
         {/* <Route exact path="/atractions">
           <Attractions content={content} />

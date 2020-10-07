@@ -25,12 +25,14 @@ export default function About({ content }) {
             </p>
           </Col>
           <Col className={classes.About__Aside}>
-            {content.tiles.map((tileContent) => {
+            {content.cards.map((cardContent) => {
               return (
                 <Card
-                  title={tileContent.title}
-                  content={tileContent.content}
-                  icon={tileContent.icon}
+                  title={cardContent.title}
+                  content={cardContent.content}
+                  icon={cardContent.icon}
+                  about
+                  header={cardContent.header}
                 />
               );
             })}

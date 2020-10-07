@@ -10,7 +10,7 @@ export default function Header(props) {
 
   return (
     <div
-      className={`${classes.Header} d-flex justify-content-between pr-5 pt-3`}
+      className={classes.Header}
     >
       {Button}
       <div className="d-flex">

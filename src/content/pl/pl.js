@@ -6,6 +6,7 @@ const pl = {
     home: {
         header: "Zielona Przystań",
         subheader: "Cichy zakątek w sercu miasta",
+        moreButton: "Więcej",
         cards: {
             about: {
                 header: "O obiekcie",
@@ -62,7 +63,7 @@ const pl = {
         header: "O obiekcie",
         subheader: "Poznaj nasze wnętrze",
         paragraph: "Zielona przystań to piękny apartament położony w samym sercu miasta. Cechuje go nietuzinkowe artystyczne wnętrze, oraz przytulny nastrój",
-        tiles: [{
+        cards: [{
                 header: "Apartament położony w sercu miasta",
                 content: "Nasz lokal położony jest przy ul. Piotrkowskiej w najbardziej reprezentacynym miejscu Łodzi.",
                 icon: "City",
@@ -124,11 +125,45 @@ const pl = {
         },
     },
     location: {
+        header: "Lokalizacja",
+        subheader: "Tutaj znajdziecie państwo lokacje naszego obiektu jak i otaczających go parkingów.",
+        controls: {
+            home: "Zielona Przystań",
+            parking1: "Parking 1",
+            parking2: "Parking 2"
+        },
         points: {
             home: "To tutaj mieści się nasz obiekt. Adres Piotrkowska 59, wejście przez bramę, drzwi do obiektu znajdują się w prawej oficynie.",
             parking1: "Parking bezpłatny! Znajduje się na tyłach budynkuj TVP Łódź. Wjazd na parking od ulicy Sienkiewicza.",
             parking2: "Parking płatny przy ulicy Narutowicza. Położony niemal bezpośrednio ze skrzyżowaniem z ulicą Piotrkowską.",
         },
+    },
+    contact: {
+        header: "Kontakt",
+        subheader: "Nie znalazłeś odpowiedzi na swoje pytania na naszej stronie? Skontaktuj się z nami!",
+        info: {
+            name: "Zielona Przystań",
+            street: "Piotrkowska 59, 90-001 Łódź",
+            email: "hanna.ciecko@gmail.com",
+            phoneNumber: "tel. 531-065-117"
+        },
+        form: {
+            name: "Imię",
+            namePlaceholder: "Wprowadź swoje imię",
+            email: "Email",
+            emailPlaceholder: "Twój email",
+            textareaPlaceholder: "Treść zapytania",
+            errorMessages: {
+                email: "Proszę wprowadzić poprawny adres email<br/>",
+                name: "Proszę wprowadzić poprawne imię<br/>",
+                harmfullSymbols: "Tekst zawiera niedozwolone znaki specjalne np $ % ^ < > itd. lub jest zbyt krótka<br/>",
+            }
+
+        }
+    },
+    gallery: {
+        header: "Galeria",
+        subheader: "Odkryj nasze wnętrze"
     },
     footer: {
         title: "Zielona Przystań",

@@ -2,15 +2,20 @@
 @import "../../../styles/utilities";
 
 .Entry {
-    &__Header {
-        margin-top: 5rem;
-        font-size: 4rem;
-        font-weight: bold;
-        color: white;
-    }
 
     padding: $header-height 5rem;
     background-image: $gradient-primary;
     background-size: 150%;
     background-repeat: no-repeat;
+
+    &__Header {
+        margin: 5rem 0;
+        font-size: 4rem;
+        font-weight: bold;
+        color: white;
+        font-family: $heading;
+        width: 100%;
+        text-align: center;
+    }
+
 }

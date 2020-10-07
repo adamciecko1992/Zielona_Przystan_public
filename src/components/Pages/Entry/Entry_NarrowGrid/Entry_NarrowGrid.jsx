@@ -4,34 +4,58 @@ import Card from "../../../UI/Card/Card";
 import Divider from "../Entry_Divider/Divider";
 import Arrow from "../../../UI/Arrow/Arrow";
 
-export default function Entry_NarrowGrid() {
+export default function Entry_NarrowGrid({ content }) {
   return (
     <div className={classes.Entry__NarrowGrid}>
-      <Card title="example" text="lorem" className="" />
+      <Card
+        content="NARRRRRRROW"
+        src={content.message.url}
+        entry
+      />
       <Divider textColor="white">
         <Arrow right />
       </Divider>
-      <Card title="example" text="lorem" />
-      <Divider textColor="black">
+      <Card
+        content={content.yardEntry.content}
+        src={content.yardEntry.url}
+        entry
+      />
+      <Divider textColor="white">
         <Arrow right />
       </Divider>
-      <Card title="example" text="lorem" />
+      <Card
+        content={content.findDoors.content}
+        src={content.findDoors.url}
+        entry
+      />
       <div></div>
       <div></div>
       <div></div>
       <div></div>
-      <Divider>
+      <Divider textColor="white">
         <Arrow down />
       </Divider>
-      <Card title="example" text="lorem" />
+      <Card
+        content={content.welcome.content}
+        src={content.welcome.url}
+        entry
+      />
       <Divider textColor="white">
         <Arrow left />
       </Divider>
-      <Card title="example" text="lorem" />
-      <Divider textColor="rgba(0,0,0,1)">
+      <Card
+        content={content.openTheDoor.content}
+        src={content.openTheDoor.url}
+        entry
+      />
+      <Divider textColor="white">
         <Arrow left />
       </Divider>
-      <Card title="example" text="lorem" />
+      <Card
+        content={content.takeOutKey.content}
+        src={content.takeOutKey.url}
+        entry
+      />
     </div>
   );
 }

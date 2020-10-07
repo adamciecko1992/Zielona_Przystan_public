@@ -32,9 +32,9 @@ export default function Location({ content }) {
       <div className={classes.Location__Grid}>
 
         <article className={classes.Location__Grid__Article}>
-          <h1 className={classes.Location__Header}>Lokalizacja</h1>
-          <h4 className={classes.Location__Subheader}>Tutaj znajdziecie państwo lokacje naszego obiektu jak i otaczających go parkingów.</h4>
-          <MapControl goTo={goTo} />
+          <h1 className={classes.Location__Header}>{content.header}</h1>
+          <h4 className={classes.Location__Subheader}>{content.subheader}</h4>
+          <MapControl goTo={goTo} content={content.controls} />
           <p className={classes.Location__Grid__Article__Text}>{currentText()}</p>
         </article>
         <aside className={classes.Location__Grid__Aside}>

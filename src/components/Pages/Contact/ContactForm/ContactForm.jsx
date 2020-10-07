@@ -26,26 +26,26 @@ export default class ContactForm extends Component {
     const propperEmail = isEmail(email) && minLength(email);
     const propperName = minLength(name) && maxLength(name) && noHarmfulSymbols(name);
     const propperContent = noHarmfulSymbols(content) && minLength(content);
-
+    const { props: { content: { errorMessages } } } = this;
     this.setState({ errorsMessage: "" });
 
     if (!propperEmail) {
       this.setState((st) => ({
         errorsMessage:
-          st.errorsMessage + "Proszę wprowadzić poprawny adres email<br/>",
+          st.errorsMessage + errorMessages.email,
       }));
     }
     if (!propperName) {
       this.setState((st) => ({
         errorsMessage:
-          st.errorsMessage + "Proszę wprowadzić poprawne imię<br/>",
+          st.errorsMessage + errorMessages.name,
       }));
     }
     if (!propperContent) {
       this.setState((st) => ({
         errorsMessage:
           st.errorsMessage +
-          "Tekst zawiera niedozwolone znaki specjalne np $ % ^ < > itd. lub jest zbyt krótka<br/>",
+          errorMessages.harmfullSymbols,
       }));
     }
 
@@ -63,7 +63,7 @@ export default class ContactForm extends Component {
         "adam_ciecko_gitara_gmail_com",
         "zielona_przystan",
         this.state,
-        "user_k9SKpA2hZLsFeeOThMknf"
+        "no key in git repo"
       );
 
       this.setState((st) => ({ send: !st.send, errors: false }));
@@ -75,25 +75,26 @@ export default class ContactForm extends Component {
     this.setState({ [field]: event.target.value });
   }
   render() {
+    const { props: { content: textContent } } = this;
     return (
       <Form
         onSubmit={this.handleSubmit}
         className={`mt-2 shadow p-3 col-lg-10 col-xs-12 mx-auto border ${classes.Form}`}
       >
         <Form.Group controlId="formBasicName">
-          <Form.Label>Imię</Form.Label>
+          <Form.Label>{textContent.name}</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Twoje imię"
+            placeholder={textContent.namePlaceholder}
             onChange={(e) => this.handleChange(e, "name")}
             value={this.state.name}
           />
         </Form.Group>
         <Form.Group controlId="formBasicEmail">
-          <Form.Label>Email</Form.Label>
+          <Form.Label>{textContent.email}</Form.Label>
           <Form.Control
             type="email"
-            placeholder="Twój adres email"
+            placeholder={textContent.emailPlaceholder}
             onChange={(e) => this.handleChange(e, "email")}
             value={this.state.email}
           />
@@ -101,7 +102,7 @@ export default class ContactForm extends Component {
         <Form.Group controlId="formBasicPassword">
           <Form.Control
             type="text"
-            placeholder="Treść zapytania"
+            placeholder={textContent.textareaPlaceholder}
             as="textarea"
             rows={6}
             onChange={(e) => this.handleChange(e, "content")}

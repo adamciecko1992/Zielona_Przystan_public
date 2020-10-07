@@ -10,7 +10,7 @@ export default function Entry_WideGrid({ content }) {
       <Card
         content={content.message.content}
         src={content.message.url}
-        minHeight="26rem"
+        entry
       />
       <Divider textColor="white">
         <Arrow right />
@@ -18,7 +18,7 @@ export default function Entry_WideGrid({ content }) {
       <Card
         content={content.yardEntry.content}
         src={content.yardEntry.url}
-        minHeight="26rem"
+        entry
       />
       <Divider textColor="white">
         <Arrow right />
@@ -26,7 +26,7 @@ export default function Entry_WideGrid({ content }) {
       <Card
         content={content.findDoors.content}
         src={content.findDoors.url}
-        minHeight="26rem"
+        entry
       />
       <div></div>
       <div></div>
@@ -38,7 +38,7 @@ export default function Entry_WideGrid({ content }) {
       <Card
         content={content.welcome.content}
         src={content.welcome.url}
-        minHeight="26rem"
+        entry
       />
       <Divider textColor="white">
         <Arrow left />
@@ -46,7 +46,7 @@ export default function Entry_WideGrid({ content }) {
       <Card
         content={content.openTheDoor.content}
         src={content.openTheDoor.url}
-        minHeight="26rem"
+        entry
       />
       <Divider textColor="white">
         <Arrow left />
@@ -54,7 +54,7 @@ export default function Entry_WideGrid({ content }) {
       <Card
         content={content.takeOutKey.content}
         src={content.takeOutKey.url}
-        minHeight="26rem"
+        entry
       />
     </div>
   );
